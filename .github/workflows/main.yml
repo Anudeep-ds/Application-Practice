@@ -21,20 +21,20 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       
       -id: repo
-       name: Repo Checkout
-       uses: actions/checkout@v3
+      name: Repo Checkout
+      uses: actions/checkout@v3
 
       -id: repo
-       name: Python setup
-       uses: actions/setup-python@v4
-       with:
+      name: Python setup
+      uses: actions/setup-python@v4
+      with:
         python-version: '3.9'
         cache: 'pip' # caching pip dependencies
       -run: pip install -r requirements.txt
 
       -id: repo
-        name: Juypiter ececution
-        run: jupyter execute practicecicd.ipynb
-        shell: bash
+      name: Juypiter ececution
+      run: jupyter execute practicecicd.ipynb
+      shell: bash
 
 
