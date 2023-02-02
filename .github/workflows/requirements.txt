@@ -1,0 +1,6 @@
+jupyterlab
+nbclient
+pandas
+numpy
+matplotlib
+tensorflow
